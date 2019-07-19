@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: attack_yunxiaoniangniang_Data
+  m_EditorClassIdentifier: 
+  dataName: attack_yunxiaoniangniang
+  dragonBonesJSON: {fileID: 4900000, guid: 0a15622c37e1b0943a3fe167b63c471a, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: e32d425caa5a8ae409fa892df60aad18, type: 3}
+    texture: {fileID: 2800000, guid: 505d0e27052cbe04f870cf46cf7c10d6, type: 3}
+    material: {fileID: 2100000, guid: aefc48786a2f9fa4292c17caa938c64b, type: 2}
+    uiMaterial: {fileID: 0}

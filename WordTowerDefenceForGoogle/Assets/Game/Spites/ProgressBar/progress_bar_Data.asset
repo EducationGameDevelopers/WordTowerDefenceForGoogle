@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: progress_bar_Data
+  m_EditorClassIdentifier: 
+  dataName: progress_bar
+  dragonBonesJSON: {fileID: 4900000, guid: 3be9bdc446390e84f9dd6f88b6a64d9e, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: a2fd7c7f95dc56747a4f103ce26a1e85, type: 3}
+    texture: {fileID: 2800000, guid: a3b609522d55a4c47af0294c696d1743, type: 3}
+    material: {fileID: 2100000, guid: 2fef92fc87cce67488c7ba43ff8a2a23, type: 2}
+    uiMaterial: {fileID: 0}

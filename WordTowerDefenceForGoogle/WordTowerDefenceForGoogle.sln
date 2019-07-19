@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordTowerDefenceForGoogle", "WordTowerDefenceForGoogle.csproj", "{F77D9B44-84C2-CC49-61F6-2D203AAC3FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordTowerDefenceForGoogle.Plugins", "WordTowerDefenceForGoogle.Plugins.csproj", "{26CE9FE7-3848-2B05-1897-BA6A63528170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordTowerDefenceForGoogle.Editor", "WordTowerDefenceForGoogle.Editor.csproj", "{BB70DB51-F537-F8F7-D4F6-09597277B2A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordTowerDefenceForGoogle.Editor.Plugins", "WordTowerDefenceForGoogle.Editor.Plugins.csproj", "{CEF819C3-81B7-A00D-60D1-3FA37AB4751C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F77D9B44-84C2-CC49-61F6-2D203AAC3FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77D9B44-84C2-CC49-61F6-2D203AAC3FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77D9B44-84C2-CC49-61F6-2D203AAC3FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77D9B44-84C2-CC49-61F6-2D203AAC3FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26CE9FE7-3848-2B05-1897-BA6A63528170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26CE9FE7-3848-2B05-1897-BA6A63528170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26CE9FE7-3848-2B05-1897-BA6A63528170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26CE9FE7-3848-2B05-1897-BA6A63528170}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB70DB51-F537-F8F7-D4F6-09597277B2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB70DB51-F537-F8F7-D4F6-09597277B2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB70DB51-F537-F8F7-D4F6-09597277B2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB70DB51-F537-F8F7-D4F6-09597277B2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF819C3-81B7-A00D-60D1-3FA37AB4751C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF819C3-81B7-A00D-60D1-3FA37AB4751C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF819C3-81B7-A00D-60D1-3FA37AB4751C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF819C3-81B7-A00D-60D1-3FA37AB4751C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

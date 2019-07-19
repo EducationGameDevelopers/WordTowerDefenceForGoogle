@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: attack_yudingzhenren_sourcefil_Data
+  m_EditorClassIdentifier: 
+  dataName: attack_yudingzhenren_sourcefil
+  dragonBonesJSON: {fileID: 4900000, guid: 195ac022a8a0359419785e72ff1ce069, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 2aa1734247216c448bcff4da038da375, type: 3}
+    texture: {fileID: 2800000, guid: c023b0cc01640b74ea803d68e890d01c, type: 3}
+    material: {fileID: 2100000, guid: 36431b2cf3da7be48bd620f780d864a7, type: 2}
+    uiMaterial: {fileID: 0}

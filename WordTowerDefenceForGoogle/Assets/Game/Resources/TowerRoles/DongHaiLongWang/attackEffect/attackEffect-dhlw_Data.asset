@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: attackEffect-dhlw_Data
+  m_EditorClassIdentifier: 
+  dataName: attackEffect-dhlw
+  dragonBonesJSON: {fileID: 4900000, guid: 6d02f3f4298f5c84cbe48a7cd041f64f, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 2329bd372c8773540b3b87b3906a3390, type: 3}
+    texture: {fileID: 2800000, guid: fd8acc0d75c518c4a88d01de12f8024a, type: 3}
+    material: {fileID: 2100000, guid: 69c98cb5a71f2bd4a86da22dd632f8fe, type: 2}
+    uiMaterial: {fileID: 0}

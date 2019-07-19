@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: 5-1-monster-sourcefile_Data
+  m_EditorClassIdentifier: 
+  dataName: 5-1-monster-sourcefile
+  dragonBonesJSON: {fileID: 4900000, guid: 8a5ce2b9c8239e2429cc112a13196727, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 2fe74acbc8436d8478987a21bad78a28, type: 3}
+    texture: {fileID: 2800000, guid: 8ffd1c6459826cf49952873180a172ff, type: 3}
+    material: {fileID: 2100000, guid: 5576977ae30fdc548b202c7cf4588611, type: 2}
+    uiMaterial: {fileID: 0}

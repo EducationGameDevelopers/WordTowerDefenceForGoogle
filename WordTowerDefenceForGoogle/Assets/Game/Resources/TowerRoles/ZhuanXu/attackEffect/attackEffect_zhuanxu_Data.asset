@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: attackEffect_zhuanxu_Data
+  m_EditorClassIdentifier: 
+  dataName: attackEffect_zhuanxu
+  dragonBonesJSON: {fileID: 4900000, guid: 1a314b358f9f5c04bafe8e5601bbbe50, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 3e45986bb8c3f0f42bdd988b788eedcb, type: 3}
+    texture: {fileID: 2800000, guid: 4b2c23466847abe49bafa1e5d28e8321, type: 3}
+    material: {fileID: 2100000, guid: 488337d2a63e64445b0c187e575e789d, type: 2}
+    uiMaterial: {fileID: 0}

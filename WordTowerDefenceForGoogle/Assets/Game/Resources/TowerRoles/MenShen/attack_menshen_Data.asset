@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: attack_menshen_Data
+  m_EditorClassIdentifier: 
+  dataName: attack_menshen
+  dragonBonesJSON: {fileID: 4900000, guid: bcac7c55c0f5bb942b69b8feff5bd05f, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: d2a083c687272094bbd79693a4c9fdd8, type: 3}
+    texture: {fileID: 2800000, guid: 7f675d3f21c909242a8caf8ddd4cb596, type: 3}
+    material: {fileID: 2100000, guid: 82ec712054f8f1043a18a5f4c1ce47fe, type: 2}
+    uiMaterial: {fileID: 0}

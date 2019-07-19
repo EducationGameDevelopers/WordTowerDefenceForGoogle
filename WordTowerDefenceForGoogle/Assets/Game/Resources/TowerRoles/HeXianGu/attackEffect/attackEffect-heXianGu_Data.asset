@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: attackEffect-heXianGu_Data
+  m_EditorClassIdentifier: 
+  dataName: attackEffect-heXianGu
+  dragonBonesJSON: {fileID: 4900000, guid: f2959b785bd0fff4abb4f309a9024064, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 5bf67df3faa261b4b8810d9cdae223c2, type: 3}
+    texture: {fileID: 2800000, guid: 212b31dda832cb04b94595b8125e9f56, type: 3}
+    material: {fileID: 2100000, guid: 249a1bdead70a1b40953cca461b3f91c, type: 2}
+    uiMaterial: {fileID: 0}

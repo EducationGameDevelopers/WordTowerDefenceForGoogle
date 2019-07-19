@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Level>
+	<Name>第一关：敌人来袭</Name>
+	<CardImage>card5.png</CardImage>
+	<Background>map1_bg5.png</Background>
+	<Road>map1_road5.png</Road>
+	<InitScore>10</InitScore>
+	<Holder>
+		<Point X="9" Y="1" />
+		<Point X="4" Y="2" />
+		<Point X="5" Y="2" />
+		<Point X="14" Y="2" />
+		<Point X="2" Y="3" />
+		<Point X="3" Y="3" />
+		<Point X="4" Y="3" />
+		<Point X="5" Y="3" />
+		<Point X="6" Y="3" />
+		<Point X="7" Y="3" />
+		<Point X="8" Y="3" />
+		<Point X="10" Y="3" />
+		<Point X="11" Y="3" />
+		<Point X="12" Y="3" />
+		<Point X="13" Y="3" />
+		<Point X="14" Y="3" />
+		<Point X="1" Y="4" />
+		<Point X="2" Y="4" />
+		<Point X="3" Y="4" />
+		<Point X="4" Y="4" />
+		<Point X="8" Y="4" />
+		<Point X="10" Y="4" />
+		<Point X="11" Y="4" />
+		<Point X="6" Y="5" />
+		<Point X="8" Y="5" />
+		<Point X="10" Y="5" />
+		<Point X="11" Y="5" />
+		<Point X="3" Y="6" />
+		<Point X="5" Y="6" />
+		<Point X="6" Y="6" />
+	</Holder>
+	<Path>
+		<Point X="3" Y="5" />
+		<Point X="5" Y="5" />
+		<Point X="5" Y="4" />
+		<Point X="7" Y="4" />
+		<Point X="7" Y="6" />
+		<Point X="9" Y="6" />
+		<Point X="9" Y="2" />
+		<Point X="12" Y="2" />
+	</Path>
+	<Rounds>
+		<Round Monster="0" Count="10" />
+		<Round Monster="1" Count="10" />
+		<Round Monster="3" Count="17" />
+		<Round Monster="0" Count="25" />
+		<Round Monster="1" Count="20" />
+		<Round Monster="3" Count="24" />
+		<Round Monster="1" Count="20" />
+		<Round Monster="3" Count="24" />
+		<Round Monster="4" Count="2" />
+	</Rounds>
+	<WordIds>
+		<WordId Id="021" />
+		<WordId Id="022" />
+		<WordId Id="023" />
+		<WordId Id="024" />
+		<WordId Id="025" />
+		<WordId Id="026" />
+		<WordId Id="027" />
+		<WordId Id="028" />
+		<WordId Id="029" />
+		<WordId Id="030" />
+	</WordIds>
+</Level>
