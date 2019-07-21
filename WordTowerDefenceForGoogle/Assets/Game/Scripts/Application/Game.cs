@@ -17,6 +17,9 @@ public class Game : ApplicationBase<Game>
     public Text myText;
     public bool IsPlayOnLevel = false;   //是否正在关卡中
     public bool IsPauseGame = false;     //是否暂停游戏
+
+    private SceneLoadProcess m_SceneLoadProcess;
+
     /// <summary>
     /// 加载场景
     /// </summary>
@@ -28,8 +31,9 @@ public class Game : ApplicationBase<Game>
 
         //退出该场景事件发出
         SendEvent(Consts.E_ExitScene, e);
-        //加载要进入的场景
-        SceneManager.LoadScene(sceneLevel, LoadSceneMode.Single);
+
+        //加载进度显示场景，进入目标场景
+        ShowSceneLoadProcess(sceneLevel);
     }
 
     /// <summary>
@@ -46,7 +50,6 @@ public class Game : ApplicationBase<Game>
 
     void Start()
     {
-
         Screen.SetResolution(1280, 720, false);
         //该脚本所在物品不会随场景加载而销毁
         GameObject.DontDestroyOnLoad(this.gameObject);
@@ -54,9 +57,25 @@ public class Game : ApplicationBase<Game>
         a_ObjectPool = ObjectPool.Instance;
         a_Sound = Sound.Instance;
         a_StaticData = StaticData.Instance;
+
+        m_SceneLoadProcess = transform.Find("GameCanvas/UISceneLoadProcess").GetComponent<SceneLoadProcess>();
+        HideSceneLoadProcess();
+
         //注册开始命令
         RegisterController(Consts.E_StartUp, typeof(StartUpCommand));
         //进入游戏（发送命令），StartUpCommand接受处理该事件
-        SendEvent(Consts.E_StartUp);
+        SendEvent(Consts.E_StartUp);        
+    }
+
+    public void ShowSceneLoadProcess(int nextSceneIndex)
+    {
+        m_SceneLoadProcess.gameObject.SetActive(true);
+        m_SceneLoadProcess.NextSceneIndex = nextSceneIndex;
+        m_SceneLoadProcess.StartSceneLoad();
+    }
+
+    public void HideSceneLoadProcess()
+    {
+        m_SceneLoadProcess.HideSceneLoad();
     }
 }
