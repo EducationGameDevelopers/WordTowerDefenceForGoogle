@@ -9,6 +9,7 @@ public class EnterSceneCommand : Controller
     {
         //注册视图
         SceneArgs e = data as SceneArgs;
+        Game.Instance.HideSceneLoadProcess();
         switch (e.SceneIndex)
         {
             case 0://Init
