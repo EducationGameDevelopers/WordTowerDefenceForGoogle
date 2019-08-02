@@ -10,6 +10,8 @@ public class MonsterInfo
 {
     public int ID;
 
+    public string PrefabName;  //该怪物对应的预制体名称
+
     public int Hp;
 
     public float MoveSpeed;

@@ -2,6 +2,7 @@
 <Monsters>
   <monster>
     <ID>0</ID>
+    <Prefab>Monster0</Prefab>
     <HP>10</HP>
     <MoveSpeed>1</MoveSpeed>
     <RewardMoney>3</RewardMoney>
@@ -9,6 +10,7 @@
   </monster>
   <monster>
     <ID>1</ID>
+    <Prefab>Monster1</Prefab>
     <HP>15</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>5</RewardMoney>
@@ -16,6 +18,7 @@
   </monster>
   <monster>
     <ID>2</ID>
+    <Prefab>Monster2</Prefab>
     <HP>20</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>6</RewardMoney>
@@ -23,6 +26,7 @@
   </monster>
   <monster>
     <ID>3</ID>
+    <Prefab>Monster3</Prefab>
     <HP>100</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>8</RewardMoney>
@@ -30,6 +34,7 @@
   </monster>
   <monster>
     <ID>4</ID>
+    <Prefab>Monster4</Prefab>
     <HP>145</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>10</RewardMoney>
@@ -37,6 +42,7 @@
   </monster>
   <monster>
     <ID>5</ID>
+    <Prefab>Monster5</Prefab>
     <HP>200</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>20</RewardMoney>
@@ -44,6 +50,7 @@
   </monster>
   <monster>
     <ID>6</ID>
+    <Prefab>Monster6</Prefab>
     <HP>5</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>20</RewardMoney>
@@ -51,6 +58,7 @@
   </monster>
   <monster>
     <ID>7</ID>
+    <Prefab>Monster7</Prefab>
     <HP>5</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>20</RewardMoney>
@@ -58,6 +66,7 @@
   </monster>
   <monster>
     <ID>8</ID>
+    <Prefab>Monster8</Prefab>
     <HP>5</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>20</RewardMoney>
@@ -65,6 +74,7 @@
   </monster>
   <monster>
     <ID>9</ID>
+    <Prefab>Monster9</Prefab>
     <HP>5</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>20</RewardMoney>
@@ -72,6 +82,7 @@
   </monster>
   <monster>
     <ID>10</ID>
+    <Prefab>Monster10</Prefab>
     <HP>5</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>20</RewardMoney>
@@ -79,6 +90,7 @@
   </monster>
   <monster>
     <ID>11</ID>
+    <Prefab>Monster11</Prefab>
     <HP>5</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>20</RewardMoney>
@@ -86,6 +98,7 @@
   </monster>
   <monster>
     <ID>12</ID>
+    <Prefab>Monster12</Prefab>
     <HP>5</HP>
     <MoveSpeed>0.5</MoveSpeed>
     <RewardMoney>20</RewardMoney>

@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MinSize: {x: 713, y: 471}
+  m_MaxSize: {x: 18008, y: 14021}
   vertical: 0
-  controlID: 109
+  controlID: 148
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 148
+  controlID: 48
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 0
     width: 294
     height: 947
-  m_MinSize: {x: 234, y: 492}
-  m_MaxSize: {x: 10004, y: 14042}
+  m_MinSize: {x: 234, y: 471}
+  m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
-  controlID: 31
+  controlID: 82
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 312}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 110
+  controlID: 149
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -479,7 +479,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -489,7 +489,7 @@ MonoBehaviour:
       y: 17
       width: 1274
       height: 675
-    m_Scale: {x: 0.9375, y: 0.9375}
+    m_Scale: {x: 0.703125, y: 0.703125}
     m_Translation: {x: 637, y: 337.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -497,10 +497,10 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -679.4667
-      y: -360
-      width: 1358.9333
-      height: 720
+      x: -905.95557
+      y: -480
+      width: 1811.9111
+      height: 960
     m_MinimalGUI: 1
   m_defaultScale: 0.703125
   m_TargetTexture: {fileID: 0}
@@ -644,7 +644,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: d836feff5a09ffffd417ffff9237ffffe640ffff5054ffff0057ffff265efffff4ffffff00000000ba6c000026700000bc71000084750000b4850000
+    m_ExpandedIDs: 98fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -706,7 +706,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Game/Scripts/Application/Misc
+    - Assets/Game/Resources/Prefabs/Monsters
   m_ViewMode: 0
   m_StartGridSize: 63
   m_LastFolders: []
@@ -717,7 +717,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 041c0000
     m_LastClickedID: 7172
-    m_ExpandedIDs: 00000000745000000a510000685100008c510000aa5100001c520000885200009c520000005300004a530000e4530000c65400003455000052550000e85500004c5700001e5800008458000086580000b4580000165900002a5900004a590000d65a00000c5b0000585b0000a25b0000f65b0000ec5c00004c5d0000005f0000925f0000945f0000c85f0000ce5f00000a6900000c6900000e6900001069000012690000
+    m_ExpandedIDs: 000000005a290000262a0000982a0000c42a0000722b00000e2c0000882c0000862d00008e2e0000162f00003c2f0000f42f0000ae310000aa3200002033000054330000ce330000e2330000de350000003600001c36000078360000da3600004e370000de390000f23a0000ac3b0000ae3b0000e83b0000be3d0000c03d0000c23d0000c43d0000c63d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -745,7 +745,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000745000000a510000685100008c5100001c5200009c52000000530000e4530000c65400003455000052550000e85500004c5700001e58000086580000b4580000165900002a590000d65a0000f45a00000c5b0000585b0000a25b0000f65b0000105e0000005f0000925f0000945f0000c85f00000a6900000c6900000e6900001069000012690000
+    m_ExpandedIDs: 000000005a290000262a0000982a0000c42a0000722b00000e2c0000882c0000862d00008e2e0000162f00003c2f00009e2f0000f42f0000ae310000aa3200002033000054330000ce330000e2330000de350000003600001c36000078360000da3600004e37000076380000de390000f23a0000ac3b0000ae3b0000e83b0000ee3b0000be3d0000c03d0000c23d0000c43d0000c63d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

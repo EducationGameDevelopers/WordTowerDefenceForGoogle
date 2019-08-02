@@ -5,6 +5,6 @@ using UnityEngine;
 
 public class SpawnMonsterArgs
 {
-    public int MonsterType;   //怪物类型(ID)
+    public string PrefabName;   //怪物类型(ID)
 }
 

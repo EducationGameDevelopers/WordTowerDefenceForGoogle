@@ -124,7 +124,8 @@ public class Tools
         {
             XmlNode node = nodes[i];
             //读取该结点的怪物信息属性并实例化
-            Round r = new Round(int.Parse(node.Attributes["Monster"].Value), int.Parse(node.Attributes["Count"].Value));
+            MonsterInfo info = Game.Instance.a_StaticData.GetMonsterInfo(int.Parse(node.Attributes["Monster"].Value));
+            Round r = new Round(int.Parse(node.Attributes["Monster"].Value), int.Parse(node.Attributes["Count"].Value), info.PrefabName);
 
             level.Rounds.Add(r);
         }
@@ -175,6 +176,9 @@ public class Tools
                     {
                         case "ID":
                             monster.ID = int.Parse(subnode.InnerText);
+                            break;
+                        case "Prefab":
+                            monster.PrefabName = subnode.InnerText;
                             break;
                         case "HP":
                             monster.Hp = int.Parse(subnode.InnerText);
