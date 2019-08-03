@@ -129,7 +129,7 @@ public class RoundModel:Model
             //构建出怪事件
             SpawnMonsterArgs ee = new SpawnMonsterArgs();
             //事件赋值
-            ee.MonsterType = round.MonsterID;
+            ee.PrefabName = round.PrefabName;
             //发送生成怪物事件，Spawner接受并处理
             SendEvent(Consts.E_SpawnMonster, ee);
 

@@ -12,10 +12,13 @@ public class Round
 
     public int Count;   //怪物数量
 
-    public Round(int monsterID, int count)
+    public string PrefabName;   //当前怪物的预制体
+
+    public Round(int monsterID, int count, string PrefabName)
     {
         this.MonsterID = monsterID;
         this.Count = count;
+        this.PrefabName = PrefabName;
     }
 }
 

@@ -6,8 +6,6 @@ using DragonBones;
 using DG.Tweening;
 public class Spawner : View
 {
-    #region 常量
-    #endregion
 
     #region 字段
     private Map m_Map = null;   //地图管理类
@@ -32,10 +30,10 @@ public class Spawner : View
     /// <summary>
     /// 生产怪物方法
     /// </summary>
-    public void SpawnMonster(int monsterType)
+    public void SpawnMonster(string PrefabName)
     {
         //怪物预制体名称
-        string prefabName = "Monster" + monsterType;
+        string prefabName = PrefabName;
 
         //对象池根据名称加载预制体
         Game.Instance.a_ObjectPool.ResourcesDir = "Prefabs/Monsters";
@@ -258,7 +256,7 @@ public class Spawner : View
             case Consts.E_SpawnMonster:
                 SpawnMonsterArgs e1 = data as SpawnMonsterArgs;
                 //生成怪物
-                SpawnMonster(e1.MonsterType);
+                SpawnMonster(e1.PrefabName);
                 break;
 
             //生成放置塔，TowerPopup脚本发出
