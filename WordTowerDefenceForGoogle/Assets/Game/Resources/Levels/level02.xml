@@ -49,9 +49,9 @@
 		<Point X="13" Y="3" />
 	</Path>
 	<Rounds>
-		<Round Monster="0" Count="3" />
+		<Round Monster="3" Count="3" />
 		<Round Monster="1" Count="5" />
-		<Round Monster="1" Count="6" />
+		<Round Monster="3" Count="6" />
 		<Round Monster="0" Count="6" />
 		<Round Monster="2" Count="3" />
 	</Rounds>
@@ -68,7 +68,7 @@
 		<WordId Id="0015" />
 	</WordIds>
   <TowerIds>
-    <Tower Id="1"/>
-    <Tower Id="2"/>
+    <Tower Id="5"/>
+    <Tower Id="6"/>
   </TowerIds>
 </Level>

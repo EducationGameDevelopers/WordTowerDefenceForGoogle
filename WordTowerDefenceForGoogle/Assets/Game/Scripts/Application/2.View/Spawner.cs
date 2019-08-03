@@ -81,7 +81,8 @@ public class Spawner : View
         {
             Tile t = new Tile(p.X, p.Y);
             Vector3 position = m_Map.GetGridPostion(t);
-            GameObject go = Game.Instance.a_ObjectPool.Spawn("FanBullet");
+            GameObject go = Game.Instance.a_ObjectPool.Spawn("CallStage");
+            go.GetComponent<UnityArmatureComponent>().animation.Play("hint");
             go.transform.position = position;
             go.transform.gameObject.SetActive(true);
         }
@@ -91,12 +92,21 @@ public class Spawner : View
     /// </summary>
     public void SpawnTower(int towerID, Vector3 postion)
     {
+        GameObject[] callStages = GameObject.FindGameObjectsWithTag("CallStage");
+        foreach (GameObject stage in callStages)
+        {
+            if (stage.transform.position == postion)
+            {
+                Game.Instance.a_ObjectPool.Unspawn(stage);
+                break;
+            }
+        }
+
         //获取生成该塔所在的格子
         Tile tile = m_Map.GetTile(postion);
 
         //获取需创建塔的信息
         TowerInfo info = Game.Instance.a_StaticData.GetTowerInfo(towerID);
-
         //对象池生成塔
         Game.Instance.a_ObjectPool.ResourcesDir = "Prefabs/Towers";
         GameObject go = Game.Instance.a_ObjectPool.Spawn(info.TowerPrefabName);

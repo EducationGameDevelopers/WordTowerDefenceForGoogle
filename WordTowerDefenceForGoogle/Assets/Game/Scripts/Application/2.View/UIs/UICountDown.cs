@@ -10,6 +10,7 @@ public class UICountDown:View
 {
     #region 字段
     public Text timer;
+    private CircleShaderController csc;
     #endregion
 
     #region 属性
@@ -96,6 +97,12 @@ public class UICountDown:View
         Hide();   //计数结束后隐藏该界面
         SendEvent(Consts.E_EndCountDown);
         SendEvent(Consts.E_ContinueGame);
+        if(Game.Instance.isFirst)
+        {
+            csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
+            csc.CountDownCompleted();
+        }
+        
     }
     #endregion
 

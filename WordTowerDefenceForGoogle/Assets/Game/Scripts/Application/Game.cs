@@ -17,6 +17,7 @@ public class Game : ApplicationBase<Game>
     public Text myText;
     public bool IsPlayOnLevel = false;   //是否正在关卡中
     public bool IsPauseGame = false;     //是否暂停游戏
+    public bool isFirst = false;
 
     private SceneLoadProcess m_SceneLoadProcess;
 

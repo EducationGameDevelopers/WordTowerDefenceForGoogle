@@ -394,10 +394,13 @@
     <Compile Include="Assets\Game\Scripts\Application\Misc\ControllLevel.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\CoronaDT.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\GoldDT.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Misc\GuideSystem\CircleShaderController.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Misc\GuideSystem\EventPenetrate.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\IrregularButton.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\MathTools.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\PhoneSMS\ALiCloudSMSTool.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\PhoneSMS\Config.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Misc\RemindString.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\Rotate.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\Saver.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Misc\SceneLoadProcess.cs" />
@@ -569,6 +572,7 @@
     <None Include="Assets\Game\Resources\Levels\level89.xml" />
     <None Include="Assets\Game\Resources\Levels\level90.xml" />
     <None Include="Assets\Game\Resources\MapProgressXML\level01.xml" />
+    <None Include="Assets\Game\Resources\Material\CircleShader.shader" />
     <None Include="Assets\Game\Resources\Words\CET4.json.txt" />
     <None Include="Assets\Game\Resources\Words\CET6.json.txt" />
     <None Include="Assets\Game\Resources\Words\Postgraduate.json.txt" />

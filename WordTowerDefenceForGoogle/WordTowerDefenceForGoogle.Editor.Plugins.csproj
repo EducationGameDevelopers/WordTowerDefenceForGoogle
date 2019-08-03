@@ -434,6 +434,7 @@
     <None Include="Assets\Game\Resources\Levels\level89.xml" />
     <None Include="Assets\Game\Resources\Levels\level90.xml" />
     <None Include="Assets\Game\Resources\MapProgressXML\level01.xml" />
+    <None Include="Assets\Game\Resources\Material\CircleShader.shader" />
     <None Include="Assets\Game\Resources\Words\CET4.json.txt" />
     <None Include="Assets\Game\Resources\Words\CET6.json.txt" />
     <None Include="Assets\Game\Resources\Words\Postgraduate.json.txt" />

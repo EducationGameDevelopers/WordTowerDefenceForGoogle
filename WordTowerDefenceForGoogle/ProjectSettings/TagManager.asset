@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Monster
+  - Pet
+  - CallStage
   layers:
   - Default
   - TransparentFX

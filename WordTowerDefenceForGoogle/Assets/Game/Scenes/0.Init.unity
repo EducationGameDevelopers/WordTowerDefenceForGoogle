@@ -456,6 +456,7 @@ MonoBehaviour:
   myText: {fileID: 0}
   IsPlayOnLevel: 0
   IsPauseGame: 0
+  isFirst: 0
 --- !u!114 &1486250249
 MonoBehaviour:
   m_ObjectHideFlags: 0

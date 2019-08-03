@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UIStart : View
 {
     private Text text_WordLexcionTitle;   //显示当前选择的词库
+    public CircleShaderController csc;
     public override string Name
     {
         get { return Consts.V_UIStart; }
@@ -14,6 +15,11 @@ public class UIStart : View
     private void Awake()
     {
         text_WordLexcionTitle = transform.Find("BtnSelectLexicon/Text").GetComponent<Text>();
+        if(Game.Instance.isFirst)
+        {
+            csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
+        } 
+       
     }
 
     void Start()
@@ -42,6 +48,10 @@ public class UIStart : View
     /// </summary>
     public void GoToSelectScene()
     {
+        if(Game.Instance.isFirst)
+        {
+            csc.Hide();
+        }
         Game.Instance.LoadScene(2);
     }
 

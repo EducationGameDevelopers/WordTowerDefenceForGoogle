@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/soiler/Desktop/WordTowerDefenceForGoogle.apk
+C:/Users/soiler/Desktop/消灭不及格/WordTowerDefenceForGoogle.apk
 SceneListBegin?
 Assets/Game/Scenes/0.Init.unity
 Assets/Game/Scenes/1.Start.unity
@@ -10,6 +10,7 @@ Assets/Game/Scenes/4.Complete.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CoronaDT
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UISnowMountain
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.MenShenBullet
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -25,6 +26,7 @@ df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.T
 3cbddf4d1a1bcb787c31a307f1ac8e7a Assembly-CSharp.dll:DragonBones.UnityDragonBonesData
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BloodBar
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StaticData
+7677ede0fbd35a31d9843b3e783634a1 Assembly-CSharp.dll:.SceneLoadProcess
 9f43c6272e0f87edc547b78a0e172419 Assembly-CSharp.dll:.Pet
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -59,6 +61,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 83b92f21c0fbcd3c550f1cb42d9b57c6 Assembly-CSharp.dll:.UIComplete
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.CaiShenYeBullet
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -91,6 +94,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.CallBullet
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIValcano
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CountDownCompleteCommand
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CallQuestionPanelCommand
@@ -109,6 +113,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.YunXiaoNiangNiangBullet
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SpawnPanel
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UINight
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -125,10 +130,17 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.YunXiaoNiangNiangTower
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.DaJiBullet
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CaiShenYeTower
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TowerIcon
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DongHaiLongWangTower
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LeiZhenZiTower
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.HeXianGuBullet
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.YuDingZhenRenBullet
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SubPool
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -136,24 +148,36 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UIDamageNumberText
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LongJiGongZhuTower
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UpGradeIcon
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.ChangEBullet
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DaXiangXianTower
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.YuDingZhenRenTower
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UISelectLexcion
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIBog
 6842eac3d510506215438c85d524be56 Assembly-CSharp.dll:.Map
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.LineShotBullet
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ZhuanXuTower
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.LuoHanBullet
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.Spawner
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DaJiTower
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.XueHuBullet
 3ade5c14cf8b94a90ef7e850eb2f00eb Assembly-CSharp.dll:.UIBoard
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TieShangGongZhuTower
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIStart
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.HuoLingShengMuBullet
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.LeiZhenZiBullet
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LuoHanTower
 8483ab3581736997cc72e83abf50843f Assembly-CSharp.dll:.UICountDown
 f266a453cd4bfbe81533762a3e3589f4 DOTween.dll:DG.Tweening.Core.DOTweenComponent
 f6e81bab2e0884855cd8cd4705ebdcd2 DOTween.dll:DG.Tweening.Core.DOTweenSettings
 c0a7d51c9362c415b104d8da8cf7e657 Assembly-CSharp.dll:DragonBones.UnityUGUIDisplay
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangETower
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIForest
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EnterSceneCommand
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.DongHaiLongWangBullet
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -168,10 +192,15 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.YangJianBullet
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UISelect
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SellTowerCommand
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UpGradePanel
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.JinLingShengMuBullet
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.ZhuanXuBullet
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.ShotBullet
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.TieShanGongZhuBullet
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CallTower
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -187,6 +216,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GoldDT
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIAnswer
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIBloodParent
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.XueHuTower
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -196,22 +226,32 @@ da8029deef085a17a94b541b4e85cd18 Assembly-CSharp.dll:.UISystem
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.IrregularButton
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StartLevelCommand
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UpGradeTowerCommand
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GuiXianRenTower
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UISelectStages
 b0b46951900f32ea6080281815203c68 Assembly-CSharp.dll:DragonBones.UnityArmatureComponent
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.DaXiangXianBullet
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIDesert
 5d965f5d5625a08ba6334df48b23b492 Assembly-CSharp.dll:.Game
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenShenTower
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HuoLingShengMuTower
 317f642e24de8d87490b7aec7dc8b813 Assembly-CSharp.dll:.Sound
 60dbe52012eaa6e1ceae145b44ce7804 Assembly-CSharp.dll:.UICard
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.JinLingShengMuTower
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.YangJianTower
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EventPenetrate
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SellIcon
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NeZhaTower
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HeXianGuTower
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.LongJiGongZhuBullet
 fdb9edc82088576b565884758b5ac0fc Assembly-CSharp.dll:.TowerPopup
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIWin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EndLevelCommand
+2133a592b1072681f9123647df78b3f8 Assembly-CSharp.dll:.CircleShaderController
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.NeZhaBullet
 7cb899f7cf7d6bc2219f23a5e09738ee Assembly-CSharp.dll:DragonBones.UnityCombineMeshs
 fe451ee8e9b8cbf8e98b94172c1479df Assembly-CSharp.dll:.Rotate
+ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.GuiXianRenBullet
 f35c85c2d1d94fb46dd5325b41c11950 Assembly-CSharp.dll:.Monster
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShotTower
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UIStartSystem

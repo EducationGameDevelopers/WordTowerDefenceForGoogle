@@ -14,7 +14,7 @@ public class UISelectLexcion : View {
     private Button btn_OK;     //确认选择的词库按钮
 
     private WordLexicon wordLexicon = WordLexicon.None;
-
+    private CircleShaderController csc;
     public override string Name
     {
         get
@@ -93,9 +93,21 @@ public class UISelectLexcion : View {
         toggle_CET4.onValueChanged.AddListener(isOn => OnSelectCTE4(isOn));
         toggle_CET6.onValueChanged.AddListener(isOn => OnSelectCTE6(isOn));
         toggle_Postgraduate.onValueChanged.AddListener(isOn => OnSelectPostgraduate(isOn));
+        
+        if (Game.Instance.isFirst)
+        {
+            csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
+            csc.currentIndex = 1;
+            csc.remindString = RemindString.startBattle;
+            btn_OK.onClick.AddListener(csc.ChangeTarget);
+        }
     }
 
-    
+    private void Start()
+    {
+        this.gameObject.SetActive(false);
+    }
+
     public void OnSelectPrimary(bool isOn)
     {
         wordLexicon = WordLexicon.Primary;
@@ -138,6 +150,7 @@ public class UISelectLexcion : View {
         //发送选择词库选项，UIStart脚本接受并处理
         SendEvent(Consts.E_WordLexcionOption);
         HideSelf();
+        
     }
 
     public void ShowSelf()

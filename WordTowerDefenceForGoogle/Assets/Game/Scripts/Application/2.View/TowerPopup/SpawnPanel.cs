@@ -20,7 +20,7 @@ public class SpawnPanel:MonoBehaviour
     public void Show(GameModel gm, Vector3 position, bool upSide)
     {
         List<string> towerIds = gm.LevelList[gm.PlayProgress].TowerIds;
-        //动态加载塔的图标TODO
+        //动态加载塔的图标
         for (int i = 0; i < m_TowerIcons.Length; i++)
         {
             //获取对应塔的信息

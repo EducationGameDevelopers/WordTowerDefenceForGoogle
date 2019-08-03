@@ -73,7 +73,6 @@ public class TowerPopup : View
     public void OnShowSpawnPanel(Vector3 position, bool upSide)
     {
         OnHideAllPopups();
-
         //对应面板显示
         GameModel gm = GetModel<GameModel>();
         a_SpawnPanel.Show(gm, position, upSide);    
@@ -129,6 +128,8 @@ public class TowerPopup : View
     /// </summary>
     void OnSellTower(Tower tower)
     {
+        GameObject callStage = Game.Instance.a_ObjectPool.Spawn("CallStage");
+        callStage.transform.position = tower.transform.position;
         //抛出事件，SellTowerCommand脚本接收处理该事件
         SendEvent(Consts.E_SellTowerArgs, new SellTowerArgs() { Tower = tower });
         OnHideAllPopups();
