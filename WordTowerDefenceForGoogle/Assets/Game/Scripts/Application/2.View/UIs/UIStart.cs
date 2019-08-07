@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DragonBones;
 
 public class UIStart : View
 {
@@ -18,8 +19,11 @@ public class UIStart : View
         if(Game.Instance.isFirst)
         {
             csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
-        } 
-       
+        }
+        //Game.Instance.a_ObjectPool.ResourcesDir = "Prefabs/Monsters";
+        //GameObject monster0 = Game.Instance.a_ObjectPool.Spawn("Monster0");
+        //monster0.transform.position = new Vector3(0, 0, 0);
+        //monster0.GetComponent<UnityArmatureComponent>().animation.Play("walk");
     }
 
     void Start()
