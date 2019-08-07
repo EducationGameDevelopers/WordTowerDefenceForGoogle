@@ -12,7 +12,7 @@ public class CircleShaderController : MonoBehaviour
     private Image Target;
 
     private EventPenetrate ev;
-    private Text remindText;
+    public Text remindText;
     public int currentIndex;
     public Image[] Targets;
     //用于展示提示信息
@@ -48,6 +48,9 @@ public class CircleShaderController : MonoBehaviour
     private float _shrinkTime = 0.5f;
     //ChangeTarget方法要用到的canvas
     private Canvas canvas;
+
+    public bool isGuideCallTower = true;       //在答题界面出来前，Game.Instance.isFirst不能设为false,因此需要此flag作为标记表示是建塔处于新手引导中
+    public Image callImage;
     /// <summary>
     /// 世界坐标向画布坐标转换
     /// </summary>
@@ -107,6 +110,10 @@ public class CircleShaderController : MonoBehaviour
     }
     private void Awake()
     {
+        if(Game.Instance.isFirst == false)
+        {
+            this.isGuideCallTower = false;
+        }
         currentIndex = 0;
         ev = transform.GetComponent<EventPenetrate>();
         remindText = GameObject.Find("RemindText").GetComponent<Text>();
@@ -140,7 +147,7 @@ public class CircleShaderController : MonoBehaviour
                 case 3:
                     canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
                     
-                    Targets = new Image[3];
+                    Targets = new Image[8];
                     Targets[0] = GameObject.Find("UIBoard/Hp/HpImageForGuideSys").GetComponent<Image>();
                     Targets[1] = GameObject.Find("UIBoard/Score/ScoreImageForGuideSys").GetComponent<Image>();
                     Targets[2] = GameObject.Find("UIBoard/BtnPause").GetComponent<Image>();
@@ -207,7 +214,16 @@ public class CircleShaderController : MonoBehaviour
         }
         else if(this.remindString == RemindString.pauseRemind)
         {
-            
+            this.GetComponent<Button>().onClick.RemoveListener(this.OnClickNext);
+            this.remindString = RemindString.showSpawnPanel;
+            GameObject callStage = GameObject.FindGameObjectWithTag("CallStage");
+            Vector3 position = RectTransformUtility.WorldToScreenPoint(Camera.main, callStage.transform.position);
+            callImage = GameObject.Find("CallStageImage").GetComponent<Image>();
+            callImage.transform.position = position;
+            callImage.enabled = false;
+            Targets[3] = callImage;
+            ChangeTarget();
         }
     }
+
 }

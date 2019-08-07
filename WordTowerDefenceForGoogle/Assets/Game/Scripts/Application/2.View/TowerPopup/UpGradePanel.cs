@@ -14,6 +14,7 @@ public class UpGradePanel:MonoBehaviour
 
     private Tower m_Tower;
 
+    private CircleShaderController csc;
     void Awake()
     {
         m_UpGradeIcon = transform.GetComponentInChildren<UpGradeIcon>();
@@ -26,7 +27,15 @@ public class UpGradePanel:MonoBehaviour
     public void Show(Tower tower)
     {
         gameObject.SetActive(true);
-
+        if(Game.Instance.isFirst)
+        {
+            csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
+            csc.remindText.text = "";
+            Image darkImage = csc.gameObject.GetComponent<Image>();
+            darkImage.color = new Color(0, 0, 0, 0);
+            darkImage.enabled = false;
+            csc.isGuideCallTower = false;
+        }
         Vector2 upGradePos = RectTransformUtility.WorldToScreenPoint(Camera.main, tower.transform.position);
         transform.position = upGradePos;
         m_Tower = tower;

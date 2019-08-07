@@ -8,7 +8,7 @@ public class TowerPopup : View
 {
     //单例模式
     private static TowerPopup instance = null;
-
+    private CircleShaderController csc;
     private float timer;  //计时器
      
     public static TowerPopup Instance
@@ -19,6 +19,7 @@ public class TowerPopup : View
     void Awake()
     {
         instance = this;
+        csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
     }
 
     void Start()
@@ -29,7 +30,7 @@ public class TowerPopup : View
     private void Update()
     {
         //当有设置塔界面显示时，默认等待一段时间自动隐藏
-        if (IsOnShow == true)
+        if (IsOnShow == true && !Game.Instance.isFirst && !csc.isGuideCallTower)
         {
             timer += Time.deltaTime;
             if (timer >= 2)
@@ -107,7 +108,6 @@ public class TowerPopup : View
         //获取塔的信息
         int towerID = (int)objs[0];
         Vector3 postion = (Vector3)objs[1];
-
         //抛出事件，Spawner脚本接收处理该事件
         SendEvent(Consts.E_SpawnTowerArgs, new SpawnTowerArgs() { TowerID = towerID, SpawnPosition = postion });
         OnHideAllPopups();

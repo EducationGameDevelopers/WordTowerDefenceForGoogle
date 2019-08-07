@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 using DragonBones;
 using DG.Tweening;
 public class Spawner : View
@@ -14,6 +15,8 @@ public class Spawner : View
 
     private Vector3 m_LuoboPos;   //萝卜的位置
     private Monster monster;
+
+    private CircleShaderController csc;
     #endregion
 
     #region 属性
@@ -88,12 +91,12 @@ public class Spawner : View
     /// <summary>
     /// 生成(放置)塔
     /// </summary>
-    public void SpawnTower(int towerID, Vector3 postion)
+    public void SpawnTower(int towerID, Vector3 position)
     {
         GameObject[] callStages = GameObject.FindGameObjectsWithTag("CallStage");
         foreach (GameObject stage in callStages)
         {
-            if (stage.transform.position == postion)
+            if (stage.transform.position == position)
             {
                 Game.Instance.a_ObjectPool.Unspawn(stage);
                 break;
@@ -101,14 +104,14 @@ public class Spawner : View
         }
 
         //获取生成该塔所在的格子
-        Tile tile = m_Map.GetTile(postion);
+        Tile tile = m_Map.GetTile(position);
 
         //获取需创建塔的信息
         TowerInfo info = Game.Instance.a_StaticData.GetTowerInfo(towerID);
         //对象池生成塔
         Game.Instance.a_ObjectPool.ResourcesDir = "Prefabs/Towers";
         GameObject go = Game.Instance.a_ObjectPool.Spawn(info.TowerPrefabName);
-        go.transform.position = postion;
+        go.transform.position = position;
 
         //设置塔的信息
         Tower tower = go.GetComponent<Tower>();
@@ -119,6 +122,22 @@ public class Spawner : View
         //金币数减少
         GameModel gm = GetModel<GameModel>();
         gm.Gold -= info.BasePrice;
+
+        if(Game.Instance.isFirst)
+        {
+            csc = GameObject.Find("Canvas/BG_Dark").GetComponent<CircleShaderController>();
+            if(csc.isGuideCallTower)
+            {
+                //把塔的坐标转换成UI坐标
+                Vector3 pos = RectTransformUtility.WorldToScreenPoint(Camera.main, position);
+
+                csc.callImage.transform.position = pos;
+                csc.Targets[5] = csc.callImage;
+                csc.remindString = RemindString.upGradeOrSellTower;
+                csc.ChangeTarget();
+            }
+        }
+        
     }
 
     #region 宠物的各种事件实现

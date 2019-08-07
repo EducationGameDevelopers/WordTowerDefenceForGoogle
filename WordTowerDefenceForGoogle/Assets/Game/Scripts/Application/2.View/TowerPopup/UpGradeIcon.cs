@@ -36,7 +36,7 @@ public class UpGradeIcon : MonoBehaviour
     }
 
 
-    public void  OnUpGradeOnClick()
+    public void OnUpGradeOnClick()
     {
         SendMessageUpwards("OnUpGradeTower", m_Tower, SendMessageOptions.RequireReceiver);
     }

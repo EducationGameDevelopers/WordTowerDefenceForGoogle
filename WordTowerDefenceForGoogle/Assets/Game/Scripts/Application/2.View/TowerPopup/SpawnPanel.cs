@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnPanel:MonoBehaviour
 {
     //塔的图标
     private TowerIcon[] m_TowerIcons;
+
+    private CircleShaderController csc;
 
     void Awake()
     {
@@ -33,6 +36,17 @@ public class SpawnPanel:MonoBehaviour
         Vector2 spawnPanelPos = RectTransformUtility.WorldToScreenPoint(Camera.main, position);
         transform.position = spawnPanelPos;
         gameObject.SetActive(true);
+        if (Game.Instance.isFirst)
+        {
+            csc = transform.parent.parent.Find("BG_Dark").GetComponent<CircleShaderController>();
+            if (csc.isGuideCallTower)
+            {
+                Image towerIcon = transform.Find("TowerIcon1").GetComponent<Image>();
+                csc.Targets[4] = towerIcon;
+                csc.remindString = RemindString.callTower;
+                csc.ChangeTarget();
+            }
+        }
     }
 
     public void Hide()
