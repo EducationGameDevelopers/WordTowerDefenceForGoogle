@@ -155,7 +155,7 @@ MonoBehaviour:
   armatureName: Armature
   isUGUI: 0
   debugDraw: 0
-  animationName: 
+  animationName: normal
   _playTimes: 0
   _timeScale: 0.4
   _sortingMode: 0

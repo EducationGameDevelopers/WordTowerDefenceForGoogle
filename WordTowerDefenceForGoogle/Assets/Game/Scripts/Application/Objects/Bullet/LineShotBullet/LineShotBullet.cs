@@ -19,8 +19,8 @@ public class LineShotBullet : Bullet {
     protected override void Update()
     {
         base.Update();
-        if (m_IsExplode)
-            return;
+        //if (m_IsExplode)
+        //    return;
         //当子弹没有爆炸且此时子弹已经在当前地图之外
         if (m_IsExplode == false && MapRectRange.Contains(transform.position) == false)
             BulletExplode();

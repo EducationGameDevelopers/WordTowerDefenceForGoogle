@@ -27,10 +27,10 @@ public class Pet : Role
     public override void TakeDamage(int damage)
     {
         base.TakeDamage(damage);
-        if (IsDead == false)
-        {
-            m_Animator.SetTrigger("IsDamage");           
-        }
+        //if (IsDead == false)
+        //{
+        //    m_Animator.SetTrigger("IsDamage");           
+        //}
         m_UIBoard.HpChange(Hp);
     }
 
@@ -41,7 +41,7 @@ public class Pet : Role
     {
         base.RoleDead(role);
 
-        m_Animator.SetBool("IsDead", true);
+        //m_Animator.SetBool("IsDead", true);
     }
 
     /// <summary>
@@ -62,7 +62,7 @@ public class Pet : Role
         Hp = info.Hp;
 
         m_UIBoard = GameObject.Find("Canvas/UIBoard").GetComponent<UIBoard>();
-        m_Animator = GetComponent<Animator>();
+        //m_Animator = GetComponent<Animator>();
 
         //关卡血量更新显示
         m_UIBoard.HpChange(Hp);       
@@ -72,8 +72,8 @@ public class Pet : Role
     {
         base.OnUnspawn();
         //设置默认动画状态机
-        m_Animator.SetBool("IsDead", false);
-        m_Animator.ResetTrigger("IsDamage");
+        //m_Animator.SetBool("IsDead", false);
+        //m_Animator.ResetTrigger("IsDamage");
     }
     #endregion
 

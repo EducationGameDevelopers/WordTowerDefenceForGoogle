@@ -49,7 +49,7 @@ public class UISelect : View
         maps.Add(snowMountain.transform);
         maps.Add(night.transform);
         maps.Add(desert.transform);
-        maps.Add(magma.transform);
+        //maps.Add(magma.transform);
     }
     private void Start()
     {
@@ -67,7 +67,30 @@ public class UISelect : View
     {
         valcano.SetActive(true);
     }
-
+    public void OnBogClick()
+    {
+        bog.SetActive(true);
+    }
+    public void OnForestClick()
+    {
+        forest.SetActive(true);
+    }
+    public void OnSnowMountainClick()
+    {
+        snowMountain.SetActive(true);
+    }
+    public void OnNightClick()
+    {
+        night.SetActive(true);
+    }
+    public void OnDesertClick()
+    {
+        desert.SetActive(true);
+    }
+    public void OnLastThemeClick()
+    {
+        this.ChooseLevel(90);
+    }
     public void OnBackClick()
     {
         Game.Instance.LoadScene(1);

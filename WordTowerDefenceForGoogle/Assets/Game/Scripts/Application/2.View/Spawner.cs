@@ -61,8 +61,32 @@ public class Spawner : View
     /// </summary>
     public void SpawnPet()
     {
+        GameModel gm = GetModel<GameModel>();
+        int levelIndex = Tools.TransformLevelIndex(gm.PlayProgress)[0];
         Game.Instance.a_ObjectPool.ResourcesDir = "Prefabs/Pets";
-        GameObject go = Game.Instance.a_ObjectPool.Spawn("WhiteTiger");
+        GameObject go = null;
+        switch (levelIndex)
+        {
+            case 0:
+                go = Game.Instance.a_ObjectPool.Spawn("Phoenix");
+                break;
+            case 1:
+                go = Game.Instance.a_ObjectPool.Spawn("Wolf");
+                break;
+            case 2:
+                go = Game.Instance.a_ObjectPool.Spawn("Tiger");
+                break;
+            case 3:
+                go = Game.Instance.a_ObjectPool.Spawn("Whale");
+                break;
+            case 4:
+                go = Game.Instance.a_ObjectPool.Spawn("Panda");
+                break;
+            case 5:
+                go = Game.Instance.a_ObjectPool.Spawn("Lion");
+                break;
+        }
+        
         go.transform.position = m_Map.LuoBoSpawnPostion();
         m_Pet = go.GetComponent<Pet>();
         //m_LuoboPos = m_Luobo.transform.position;
@@ -172,6 +196,7 @@ public class Spawner : View
 
         //对象池对该怪物对象进行回收
         Game.Instance.a_ObjectPool.Unspawn(monster.gameObject);
+        
     }
     /// <summary>
     /// 怪物死亡动画结束后调用
@@ -210,6 +235,7 @@ public class Spawner : View
         {
             if (rm.RoundMonsterCount <= 0)
             {
+                
                 //下一波怪物可以进来
                 //rm.StartRound();
                 //唤出答题界面

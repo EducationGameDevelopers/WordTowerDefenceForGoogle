@@ -26,8 +26,8 @@ public class WhiteTiger : Pet
         m_UIBoard = GameObject.Find("Canvas/UIBoard").GetComponent<UIBoard>();
 
 
-        m_Animator = GetComponent<Animator>();
-        m_Animator.Play("WhiteTiger_Idle");
+        //m_Animator = GetComponent<Animator>();
+        //m_Animator.Play("WhiteTiger_Idle");
     }
     public override void OnUnspawn()
     {

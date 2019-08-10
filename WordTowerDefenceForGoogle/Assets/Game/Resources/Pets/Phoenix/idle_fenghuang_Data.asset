@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: idle_fenghuang_Data
+  m_EditorClassIdentifier: 
+  dataName: idle_fenghuang
+  dragonBonesJSON: {fileID: 4900000, guid: 39add5d5ec2bdaa45aaeacbea0dbdbf5, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: ce8a9430238fa5b4592a6b6eae2e0a82, type: 3}
+    texture: {fileID: 2800000, guid: 77901851d583bc14b891d692ea480ab1, type: 3}
+    material: {fileID: 2100000, guid: 937ac516d19de3e48a1ee42ccb79ccc8, type: 2}
+    uiMaterial: {fileID: 2100000, guid: 36e5098711b748d468f3a72a6eb36ba9, type: 2}

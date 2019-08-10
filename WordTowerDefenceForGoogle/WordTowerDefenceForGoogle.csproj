@@ -430,9 +430,13 @@
     <Compile Include="Assets\Game\Scripts\Application\Objects\Bullet\ShotBullet\ShotBullet.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Objects\Bullet\ShotBullet\YuDingZhenRenBullet.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Objects\Map.cs" />
-    <Compile Include="Assets\Game\Scripts\Application\Objects\MonsterOnUI\MonsterGhostOnUI.cs" />
-    <Compile Include="Assets\Game\Scripts\Application\Objects\MonsterOnUI\MonsterOnUI.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Objects\Pets\Lion.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Objects\Pets\Panda.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Objects\Pets\Phoenix.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Objects\Pets\Tiger.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Objects\Pets\Whale.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Objects\Pets\WhiteTiger.cs" />
+    <Compile Include="Assets\Game\Scripts\Application\Objects\Pets\Wolf.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Objects\Role\Monster.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Objects\Role\Pet.cs" />
     <Compile Include="Assets\Game\Scripts\Application\Objects\Role\Role.cs" />

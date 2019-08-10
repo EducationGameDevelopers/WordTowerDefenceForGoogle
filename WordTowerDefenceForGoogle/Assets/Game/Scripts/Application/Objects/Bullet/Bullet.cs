@@ -87,11 +87,11 @@ public abstract class Bullet:ResuableObject
         //m_Animator.SetTrigger("IsExplode");
 
         //在关卡中执行
-        if (Game.Instance.IsPlayOnLevel == true)
-            //延迟回收该子弹对象
-            StartCoroutine("DelayUpspawnBullet");
-        else
-            Game.Instance.a_ObjectPool.Unspawn(this.gameObject);
+        //if (Game.Instance.IsPlayOnLevel == true)
+        //    //延迟回收该子弹对象
+        //    StartCoroutine("DelayUpspawnBullet");
+        //else
+        Game.Instance.a_ObjectPool.Unspawn(this.gameObject);
     }
 
     /// <summary>

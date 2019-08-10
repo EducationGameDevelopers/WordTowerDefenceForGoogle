@@ -27,6 +27,7 @@ df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.T
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BloodBar
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StaticData
 7677ede0fbd35a31d9843b3e783634a1 Assembly-CSharp.dll:.SceneLoadProcess
+9f43c6272e0f87edc547b78a0e172419 Assembly-CSharp.dll:.Whale
 9f43c6272e0f87edc547b78a0e172419 Assembly-CSharp.dll:.Pet
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -101,6 +102,7 @@ ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.CallBullet
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StartUpCommand
 ab193d3afbd92f912ea6a74883bc0636 Assembly-CSharp.dll:.ObjectPool
 b957ac79d4cbcf118d73f97643484175 Assembly-CSharp.dll:.UILost
+9f43c6272e0f87edc547b78a0e172419 Assembly-CSharp.dll:.Wolf
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -114,6 +116,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.YunXiaoNiangNiangBullet
+9f43c6272e0f87edc547b78a0e172419 Assembly-CSharp.dll:.Panda
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SpawnPanel
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UINight
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -153,6 +156,8 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.ChangEBullet
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DaXiangXianTower
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.YuDingZhenRenTower
+9f43c6272e0f87edc547b78a0e172419 Assembly-CSharp.dll:.Phoenix
+9f43c6272e0f87edc547b78a0e172419 Assembly-CSharp.dll:.Lion
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UISelectLexcion
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIBog
 6842eac3d510506215438c85d524be56 Assembly-CSharp.dll:.Map
@@ -164,7 +169,7 @@ ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.LuoHanBullet
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.XueHuBullet
 3ade5c14cf8b94a90ef7e850eb2f00eb Assembly-CSharp.dll:.UIBoard
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TieShangGongZhuTower
-347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIStart
+b4b1995bb4c1b5473bb849c0faa39120 Assembly-CSharp.dll:.UIStart
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.HuoLingShengMuBullet
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
@@ -232,7 +237,7 @@ b0b46951900f32ea6080281815203c68 Assembly-CSharp.dll:DragonBones.UnityArmatureCo
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.DaXiangXianBullet
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIDesert
-5d965f5d5625a08ba6334df48b23b492 Assembly-CSharp.dll:.Game
+27eacc742bd7dfcdab57b55dc7493b45 Assembly-CSharp.dll:.Game
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenShenTower
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HuoLingShengMuTower
 317f642e24de8d87490b7aec7dc8b813 Assembly-CSharp.dll:.Sound
@@ -247,10 +252,11 @@ ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.LongJiGongZhuBullet
 fdb9edc82088576b565884758b5ac0fc Assembly-CSharp.dll:.TowerPopup
 347e181022193342853dbd911b06ce7d Assembly-CSharp.dll:.UIWin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EndLevelCommand
-2133a592b1072681f9123647df78b3f8 Assembly-CSharp.dll:.CircleShaderController
+84acc596bbefdd334f26c0807af590f7 Assembly-CSharp.dll:.CircleShaderController
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.NeZhaBullet
 7cb899f7cf7d6bc2219f23a5e09738ee Assembly-CSharp.dll:DragonBones.UnityCombineMeshs
 fe451ee8e9b8cbf8e98b94172c1479df Assembly-CSharp.dll:.Rotate
+9f43c6272e0f87edc547b78a0e172419 Assembly-CSharp.dll:.Tiger
 ad619eeb397437edb83b08223c50c85b Assembly-CSharp.dll:.GuiXianRenBullet
 f35c85c2d1d94fb46dd5325b41c11950 Assembly-CSharp.dll:.Monster
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShotTower

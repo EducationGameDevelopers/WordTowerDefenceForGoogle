@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: idle_laohu_Data
+  m_EditorClassIdentifier: 
+  dataName: idle_laohu
+  dragonBonesJSON: {fileID: 4900000, guid: 40a1732772439e9468fbcffe6a458449, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 283e84b644ee1ba499e38a0b5dd38609, type: 3}
+    texture: {fileID: 2800000, guid: dee68d92a945918479d566fdf6dee9b8, type: 3}
+    material: {fileID: 2100000, guid: 7e2d92432f95671439779fec8a9e452d, type: 2}
+    uiMaterial: {fileID: 0}

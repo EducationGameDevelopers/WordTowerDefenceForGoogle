@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIDesert : View {
+public class UINight : View {
 
     #region 字段
     private UISelect uiSelect;

@@ -19,7 +19,10 @@ public class TowerPopup : View
     void Awake()
     {
         instance = this;
-        csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
+        if(Game.Instance.isFirst)
+        {
+            csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
+        }
     }
 
     void Start()
@@ -30,7 +33,7 @@ public class TowerPopup : View
     private void Update()
     {
         //当有设置塔界面显示时，默认等待一段时间自动隐藏
-        if (IsOnShow == true && !Game.Instance.isFirst && !csc.isGuideCallTower)
+        if (IsOnShow == true)
         {
             timer += Time.deltaTime;
             if (timer >= 2)

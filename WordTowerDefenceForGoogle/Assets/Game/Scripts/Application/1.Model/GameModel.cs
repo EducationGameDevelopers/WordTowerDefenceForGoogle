@@ -112,8 +112,8 @@ public class GameModel:Model
 
         //读取游戏通关进度存档
         //m_MaxPassProgress = Tools.GetMaxProgress();
-        m_MaxPassProgress = Saver.GetGameProgress();
-        //m_MaxPassProgress = 0;
+        //m_MaxPassProgress = Saver.GetGameProgress();
+        m_MaxPassProgress = 80;
         //设置初始金币数
         Gold = 400;
         return true;

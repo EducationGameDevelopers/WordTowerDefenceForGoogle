@@ -103,7 +103,7 @@ public class UIBog : View {
     }
     public void OnLevel15Click()
     {
-        uiSelect.ChooseLevel(14);
+        uiSelect.ChooseLevel(29);
     }
     #endregion
 }

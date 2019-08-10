@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: ilde_tongshi_Data
+  m_EditorClassIdentifier: 
+  dataName: ilde_tongshi
+  dragonBonesJSON: {fileID: 4900000, guid: 0543f1e536abc58439abdafd76658c2c, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: c5b62884e8eb7364d9abde3dd6eacd2a, type: 3}
+    texture: {fileID: 2800000, guid: 5b92d84c73d24a24686354510ccfa7fc, type: 3}
+    material: {fileID: 2100000, guid: 03b001bf963add74f90bcd327c19fa52, type: 2}
+    uiMaterial: {fileID: 0}

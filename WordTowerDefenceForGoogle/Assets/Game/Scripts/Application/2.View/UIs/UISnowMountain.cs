@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class UINight : View {
+public class UISnowMountain : View {
 
     #region 字段
     private UISelect uiSelect;
+    private Button[] children;
+    private List<int> levelIndex;
     #endregion
 
     #region 属性
@@ -30,7 +33,11 @@ public class UINight : View {
     private void Awake()
     {
         uiSelect = this.transform.parent.GetComponent<UISelect>();
+        children = this.transform.GetComponentsInChildren<Button>();
+        
     }
+
+    
 
     /// <summary>
     /// 返回按钮点击事件

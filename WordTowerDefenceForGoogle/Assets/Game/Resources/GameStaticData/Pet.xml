@@ -4,4 +4,24 @@
     <ID>0</ID>
     <HP>20</HP>
   </pet>
+  <pet>
+    <ID>1</ID>
+    <HP>20</HP>
+  </pet>
+  <pet>
+    <ID>2</ID>
+    <HP>20</HP>
+  </pet>
+  <pet>
+    <ID>3</ID>
+    <HP>20</HP>
+  </pet>
+  <pet>
+    <ID>4</ID>
+    <HP>20</HP>
+  </pet>
+  <pet>
+    <ID>5</ID>
+    <HP>20</HP>
+  </pet>
 </Pets>
