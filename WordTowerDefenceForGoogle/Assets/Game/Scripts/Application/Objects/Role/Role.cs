@@ -102,7 +102,7 @@ public abstract class Role : ResuableObject,IReusable
     /// </summary>
     public virtual void RoleDead(Role role)
     {
- 
+      
     }
 
     public override void OnSpawn()

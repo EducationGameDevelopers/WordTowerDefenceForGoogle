@@ -196,7 +196,7 @@ public class Spawner : View
 
         //对象池对该怪物对象进行回收
         Game.Instance.a_ObjectPool.Unspawn(monster.gameObject);
-        
+
     }
     /// <summary>
     /// 怪物死亡动画结束后调用
@@ -249,10 +249,48 @@ public class Spawner : View
     /// <param name="monster"></param>
     public void Monster_DeadEvent(Role monster)
     {
-        this.monster = (Monster)monster;
-        UnityArmatureComponent armatureComponent = monster.GetComponent<UnityArmatureComponent>();
-        armatureComponent.AddDBEventListener(EventObject.COMPLETE, AfterDieAnimation);
-        armatureComponent.animation.FadeIn("die", -1, 1);
+        //this.monster = (Monster)monster;
+        //UnityArmatureComponent armatureComponent = monster.GetComponent<UnityArmatureComponent>();
+        //armatureComponent.AddDBEventListener(EventObject.COMPLETE, AfterDieAnimation);
+        //armatureComponent.animation.FadeIn("die", -1, 1);
+        Game.Instance.a_ObjectPool.Unspawn(monster.gameObject);
+
+        monster.Hp = 0;
+        monster.GetComponent<UnityArmatureComponent>().RemoveDBEventListener(EventObject.COMPLETE, AfterDieAnimation);
+
+        //获取所需的数据模型
+        GameModel gm = GetModel<GameModel>();
+        RoundModel rm = GetModel<RoundModel>();
+        UserAnswerModel uam = GetModel<UserAnswerModel>();
+
+        //金钱数增加
+        gm.Gold += monster.RewardMoney;
+        monster = null;
+        //获取当前场景内存在的敌人
+        GameObject[] monsters = GameObject.FindGameObjectsWithTag("Monster");
+
+        //判定该关卡是否胜利
+        if (m_Pet.IsDead == false              //萝卜没有死亡
+            && monsters.Length <= 0              //场景内没有怪物
+            && rm.IsAllRoundComplete == true)    //怪物的波数完成
+        {
+            //发送结束关卡事件，传递该关卡胜利信息
+            SendEvent(Consts.E_EndLevel, new EndLevelArgs() { LevelIndex = gm.PlayProgress, IsWin = true });
+        }
+
+        else if (m_Pet.IsDead == false              //萝卜没有死亡
+            && monsters.Length <= 0              //场景内没有怪物
+            && rm.IsAllRoundComplete == false)    //怪物的波数没有完成
+        {
+            if (rm.RoundMonsterCount <= 0)
+            {
+
+                //下一波怪物可以进来
+                //rm.StartRound();
+                //唤出答题界面
+                SendEvent(Consts.E_CallQuestionPanel);
+            }
+        }
     }
 
     void Monster_HpChangeEvent(int currentHp, int maxHp)
