@@ -37,7 +37,7 @@ public class UISelectLexcion : View {
                 //当用户已选择词库时，进入到该场景不再显示选择词库界面
                 if (StaticData.Instance.WordLexiconOption != WordLexicon.None && e.SceneIndex == 1)
                 {
-                    HideSelf();
+                    HideSelf();                   
                 }
 
                 if (e.SceneIndex == 1)
@@ -65,7 +65,7 @@ public class UISelectLexcion : View {
                             break;
 
                         default:
-                            
+                            HideSelf();
                             break;
                     }
                 }
@@ -103,10 +103,6 @@ public class UISelectLexcion : View {
         }
     }
 
-    private void Start()
-    {
-        this.gameObject.SetActive(false);
-    }
 
     public void OnSelectPrimary(bool isOn)
     {

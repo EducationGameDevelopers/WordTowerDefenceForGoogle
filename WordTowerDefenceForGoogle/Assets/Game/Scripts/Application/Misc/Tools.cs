@@ -464,7 +464,6 @@ public class Tools
             int rightMarkCount = (int)(temp["RightMarkCount"].n);
 
             word = new Word(str_Id, str_English, str_Chinese, wrongMarkCount, rightMarkCount);
-            //Debug.Log(word.Str_English);
             wordDict.Add(word.Str_Id, word);
         }
 
