@@ -39,6 +39,7 @@ public class StaticData : Singleton<StaticData>
         InitTower();
         InitBullet();
         InitPersistentWordFiles();
+        InitWordLexicon();
     }
 
     /// <summary>
@@ -80,6 +81,13 @@ public class StaticData : Singleton<StaticData>
         PlayerPrefs.SetString("WordLexcionPotion", wordLexicon.ToString());
         //本地取出该选项记录
         wordLexiconOption = (WordLexicon)Enum.Parse(typeof(WordLexicon), PlayerPrefs.GetString("WordLexcionPotion"));
+    }
+
+    void InitWordLexicon()
+    {
+        if (PlayerPrefs.HasKey("WordLexcionPotion") == true)
+            //本地取出该选项记录
+            wordLexiconOption = (WordLexicon)Enum.Parse(typeof(WordLexicon), PlayerPrefs.GetString("WordLexcionPotion"));
     }
 
     /// <summary>
