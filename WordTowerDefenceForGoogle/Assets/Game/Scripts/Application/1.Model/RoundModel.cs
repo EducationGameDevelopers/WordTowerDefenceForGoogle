@@ -23,7 +23,7 @@ public class RoundModel:Model
 
     private int m_CurrentAppearMonsterCount;   //当前波数的剩余怪物数
 
-    private bool isCurrentRoundRunning = false;     //当前波是否正在进行
+    private int m_CurrentRemainCount = 1;   //当前波怪物的剩余数量
     #endregion
 
     #region 属性
@@ -58,10 +58,9 @@ public class RoundModel:Model
         get { return m_IsAllRoundComplete; }
     }
 
-    public bool IsCurrentRoundRunning
+    public int CurrentRemainCount
     {
-        get { return isCurrentRoundRunning; }
-        set { isCurrentRoundRunning = value; }
+        get { return m_CurrentRemainCount; }
     }
     #endregion
 
@@ -106,9 +105,6 @@ public class RoundModel:Model
         if (m_RoundIndex > m_Rounds.Count)
             yield return new WaitForSeconds(0);
 
-        m_IsAllRoundComplete = false;
-        isCurrentRoundRunning = true;
-
         ////构建开始当前回合事件
         //StartRoundArgs e = new StartRoundArgs();
         ////当前事件数据赋值
@@ -119,10 +115,12 @@ public class RoundModel:Model
         //SendEvent(Consts.E_StartRound, e);
 
         Round round = m_Rounds[m_RoundIndex];
+        m_CurrentRemainCount = round.Count;
 
         for (int j = m_CurrentAppearMonsterCount; j < round.Count; j++)
-        {//每回合出怪
-         //发送该波的数据信息事件，UIBoard接受并处理
+        {
+            //每回合出怪
+            //发送该波的数据信息事件，UIBoard接受并处理
             SendEvent(Consts.E_RoundInfo, new RoundInfoArgs() { MonsterIndex = j, RoundIndex = m_RoundIndex });
             //每个怪出现的时间间隔
             yield return new WaitForSeconds(SPAWN_INTERVAL);
@@ -136,6 +134,8 @@ public class RoundModel:Model
             m_MonsterIndex = j;
             //记录当前怪物数量
             m_CurrentAppearMonsterCount = j;
+
+            m_CurrentRemainCount--;
             //最后一波的最后一个怪完成时不再等待
             if ((m_RoundIndex == m_Rounds.Count - 1) && (j == round.Count - 1))
             {
@@ -149,13 +149,12 @@ public class RoundModel:Model
         m_RoundIndex++;
         //当前波怪物数归零
         m_CurrentAppearMonsterCount = 0;
-       
+
         //所有回合还未完成
         if (m_IsAllRoundComplete == false)
         {
-            isCurrentRoundRunning = false;  //当前波结束
             //回合之间的时间间隔
-            yield return new WaitForSeconds(ROUND_INTERVAL);          
+            yield return new WaitForSeconds(ROUND_INTERVAL); 
         }
 
     }

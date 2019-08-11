@@ -101,7 +101,12 @@ public class MathTools
     /// </summary>
     public static float GetRate(float part, float total)
     {
-        float result = (part / total) * 100;
+        float result = 0;
+        if (total != 0)
+        {
+            result = (part / total) * 100;
+        }
+        
         return float.Parse(result.ToString("00.00"));
     }
 
