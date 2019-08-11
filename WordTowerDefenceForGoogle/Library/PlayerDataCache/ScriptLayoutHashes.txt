@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/soiler/Desktop/消灭不及格/WordTowerDefenceForGoogle.apk
+F:/4.项目文档/单词塔防Android端Demo/WordTowerDefenceForGoogle_v1.apk
 SceneListBegin?
 Assets/Game/Scenes/0.Init.unity
 Assets/Game/Scenes/1.Start.unity

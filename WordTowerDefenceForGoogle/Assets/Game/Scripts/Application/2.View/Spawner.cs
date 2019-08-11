@@ -198,9 +198,9 @@ public class Spawner : View
         Game.Instance.a_ObjectPool.Unspawn(monster.gameObject);
 
     }
-    ///// <summary>
-    ///// 怪物死亡动画结束后调用
-    ///// </summary>
+    /// <summary>
+    /// 怪物死亡动画结束后调用
+    /// </summary>
     //private void AfterDieAnimation(string type, EventObject eventObject)
     //{
     //    //对象池对该怪物对象进行回收
@@ -231,7 +231,8 @@ public class Spawner : View
 
     //    else if (m_Pet.IsDead == false              //萝卜没有死亡
     //        && monsters.Length <= 0              //场景内没有怪物
-    //        && rm.IsAllRoundComplete == false)    //怪物的波数没有完成
+    //        && rm.IsAllRoundComplete == false
+    //        && rm.CurrentRemainCount <= 0)    //怪物的波数没有完成
     //    {
     //        if (rm.RoundMonsterCount <= 0)
     //        {
@@ -243,6 +244,7 @@ public class Spawner : View
     //        }
     //    }
     //}
+
     /// <summary>
     /// 怪物死亡时调用，在Monster类的RoleDead()方法后
     /// </summary>
@@ -280,7 +282,8 @@ public class Spawner : View
 
         else if (m_Pet.IsDead == false              //萝卜没有死亡
             && monsters.Length <= 0              //场景内没有怪物
-            && rm.IsAllRoundComplete == false)    //怪物的波数没有完成
+            && rm.IsAllRoundComplete == false
+            && rm.CurrentRemainCount <= 0)    //怪物的波数没有完成
         {
             if (rm.RoundMonsterCount <= 0)
             {
@@ -298,9 +301,6 @@ public class Spawner : View
 
     }
     #endregion
-    #endregion
-
-    #region Unity回调
     #endregion
 
     #region 事件回调

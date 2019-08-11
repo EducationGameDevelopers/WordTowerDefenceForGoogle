@@ -86,8 +86,12 @@ public class StaticData : Singleton<StaticData>
     void InitWordLexicon()
     {
         if (PlayerPrefs.HasKey("WordLexcionPotion") == true)
-            //本地取出该选项记录
+        {
             wordLexiconOption = (WordLexicon)Enum.Parse(typeof(WordLexicon), PlayerPrefs.GetString("WordLexcionPotion"));
+            SelectWordLexcion(wordLexiconOption);
+        }
+            //本地取出该选项记录
+            
     }
 
     /// <summary>
