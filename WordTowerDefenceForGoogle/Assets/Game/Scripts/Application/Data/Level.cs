@@ -18,6 +18,8 @@ public class Level
 
     public int InitScore;       //初始金币
 
+    public int RightCountLimit;   //每轮答题答对数量的上限
+
     public List<Point> Holder = new List<Point>();   //可放置炮塔的位置
 
     public List<Point> Path = new List<Point>();     //敌人路径位置

@@ -55,10 +55,15 @@ public class UIAnswer:View
 
     private int chinese_alternate_English = 0;  //中英文问题选项转换
 
+    private int rightCountLimit = 10;   //每轮答题回答正确的上限
+
     private static Coroutine coroutine_timer;   //计时器地协程
 
     private int remindTimer = 11;    //提示计时器，一般为倒计时10秒
     private System.Random random;   //随机数生成类
+
+    public GameObject RightLimitReminder;
+    private int orgionData;
     #endregion
 
     #region 属性
@@ -77,6 +82,9 @@ public class UIAnswer:View
 
         m_Level = m_GM.PlayLevel;
         m_Game = Game.Instance;
+
+        rightCountLimit = m_Level.RightCountLimit;
+        orgionData = rightCountLimit;
 
         random = new System.Random();
 
@@ -111,6 +119,7 @@ public class UIAnswer:View
         GO_TimeEndReminder.SetActive(false);
         GO_WrongReminderPanel.SetActive(false);
         GO_RightWaittingPanel.SetActive(false);
+        RightLimitReminder.SetActive(false);
         btn_back.onClick.AddListener(OnBackBtnOnClick);
     }
 
@@ -325,30 +334,38 @@ public class UIAnswer:View
         //答题总点击数和正确点击数增加
         m_UAM.Total_ClickCount += 1;
         m_UAM.Total_RightClickCount += 1;
+        rightCountLimit -= 1;
 
-        
-        //在规定时间内答对获得全部奖励，否则只有一半
-        if (remindTimer >= 5)
+        if (rightCountLimit <= 0)
         {
-            //获得金币
-            m_GM.Gold += rewardGold;
+            RightLimitReminder.SetActive(true);
         }
         else
         {
-            m_GM.Gold += (int)(rewardGold / 2);
-        }
+            //在规定时间内答对获得全部奖励，否则只有一半
+            if (remindTimer >= 5)
+            {
+                //获得金币
+                m_GM.Gold += rewardGold;
+            }
+            else
+            {
+                m_GM.Gold += (int)(rewardGold / 2);
+            }
 
-        //生成金币特效
-        for (int i = 0; i < 5; i++)
-        {
-            //在答案位置生成金币
-            Vector3 goldPosition = new Vector3(100, 20 + i * 80, 0);
+            //生成金币特效
+            for (int i = 0; i < 5; i++)
+            {
+                //在答案位置生成金币
+                Vector3 goldPosition = new Vector3(100, 20 + i * 80, 0);
 
-            //金币坐标信息
-            ItemPositionArgs goldPosArgs = new ItemPositionArgs() { ItemPostion = goldPosition };
-            //发出事件，UIBloodParent脚本接受并处理
-            SendEvent(Consts.E_GoldEffect, goldPosArgs);
+                //金币坐标信息
+                ItemPositionArgs goldPosArgs = new ItemPositionArgs() { ItemPostion = goldPosition };
+                //发出事件，UIBloodParent脚本接受并处理
+                SendEvent(Consts.E_GoldEffect, goldPosArgs);
+            }
         }
+        
 
         if (coroutine_timer != null)
         {
@@ -432,7 +449,7 @@ public class UIAnswer:View
         yield return new WaitForSeconds(2.7f);
 
         GO_RightWaittingPanel.SetActive(false);
-        
+        RightLimitReminder.SetActive(false);
         SetOption();   //正确答案提示后重新设置选项
     }
 
@@ -516,6 +533,10 @@ public class UIAnswer:View
         
         GO_RightWaittingPanel.SetActive(false);
         GO_WrongReminderPanel.SetActive(false);
+        RightLimitReminder.SetActive(false);
+
+        rightCountLimit = orgionData;
+
         if (GO_WrongOptionReminder != null)
             GO_WrongOptionReminder.SetActive(false);
     }
