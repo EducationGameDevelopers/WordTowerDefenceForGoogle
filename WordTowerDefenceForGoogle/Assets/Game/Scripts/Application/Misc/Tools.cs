@@ -93,6 +93,7 @@ public class Tools
         level.Background = doc.SelectSingleNode("/Level/Background").InnerText;
         level.Road = doc.SelectSingleNode("/Level/Road").InnerText;
         level.InitScore = int.Parse(doc.SelectSingleNode("/Level/InitScore").InnerText);
+        level.RightCountLimit = int.Parse(doc.SelectSingleNode("/Level/RightCountLimit").InnerText) + 1;
 
         XmlNodeList nodes;
 

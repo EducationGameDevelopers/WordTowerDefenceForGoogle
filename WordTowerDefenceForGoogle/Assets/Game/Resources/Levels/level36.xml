@@ -5,6 +5,7 @@
 	<Background>map3_bg6.png</Background>
 	<Road>map3_road6.png</Road>
 	<InitScore>10</InitScore>
+  <RightCountLimit>10</RightCountLimit>
 	<Holder>
 		<Point X="3" Y="2" />
 		<Point X="4" Y="2" />
