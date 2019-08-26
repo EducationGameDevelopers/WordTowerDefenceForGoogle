@@ -31,10 +31,14 @@ public class UpGradePanel:MonoBehaviour
         {
             csc = GameObject.Find("BG_Dark").GetComponent<CircleShaderController>();
             csc.remindText.text = "";
-            Image darkImage = csc.gameObject.GetComponent<Image>();
-            darkImage.color = new Color(0, 0, 0, 0);
-            darkImage.enabled = false;
+            //Image darkImage = csc.gameObject.GetComponent<Image>();
+            //darkImage.color = new Color(0, 0, 0, 0);
+            //darkImage.enabled = false;
+            csc.gameObject.SetActive(false);
             csc.isGuideCallTower = false;
+            Game.Instance.isFirst = false;
+            Saver.SetGuideIsEnd(1);
+            
         }
         Vector2 upGradePos = RectTransformUtility.WorldToScreenPoint(Camera.main, tower.transform.position);
         transform.position = upGradePos;

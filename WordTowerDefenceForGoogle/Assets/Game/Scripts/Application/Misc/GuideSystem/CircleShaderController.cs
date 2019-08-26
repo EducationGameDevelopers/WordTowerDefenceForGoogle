@@ -220,7 +220,7 @@ public class CircleShaderController : MonoBehaviour
             Vector3 position = RectTransformUtility.WorldToScreenPoint(Camera.main, callStage.transform.position);
             callImage = GameObject.Find("CallStageImage").GetComponent<Image>();
             callImage.transform.position = position;
-            callImage.enabled = false;
+            //callImage.enabled = false;
             Targets[3] = callImage;
             ChangeTarget();
         }

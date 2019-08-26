@@ -71,4 +71,8 @@
 		<WordId Id="0079" />
 		<WordId Id="0080" />
 	</WordIds>
+  <TowerIds>
+    <Tower Id="4"/>
+    <Tower Id="5"/>
+  </TowerIds>
 </Level>

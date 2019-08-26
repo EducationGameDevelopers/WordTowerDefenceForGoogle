@@ -76,17 +76,17 @@ public class UIWin:View
     public void OnContinueClick()
     {
         GameModel gm = GetModel<GameModel>();
-        //当该关卡为最终关卡时，通关
-        if (gm.PlayProgress >= gm.LevelList.Count - 1)
-        {
-            //跳转至通关游戏场景
-            Game.Instance.LoadScene(4);
-        }
-        else
-        {
-            //开始下一关，StartLevelCommand处理该事件
-            SendEvent(Consts.E_StartLevel, new StartLevelArgs() { LevelIndex = gm.PlayProgress + 1 });
-        }        
+        ////当该关卡为最终关卡时，通关
+        //if (gm.PlayProgress >= gm.LevelList.Count - 1)
+        //{
+        //    //跳转至通关游戏场景
+        //    Game.Instance.LoadScene(4);
+        //}
+        //else
+        //{
+        //开始下一关，StartLevelCommand处理该事件
+        SendEvent(Consts.E_StartLevel, new StartLevelArgs() { LevelIndex = gm.PlayProgress + 1 });
+        //}
     }
     #endregion
 

@@ -87,9 +87,13 @@ public class UISelect : View
     {
         desert.SetActive(true);
     }
+    /// <summary>
+    /// 最后一个主题的点击事件
+    /// </summary>
     public void OnLastThemeClick()
     {
-        this.ChooseLevel(90);
+        //跳转至通关游戏场景
+        Game.Instance.LoadScene(4);
     }
     public void OnBackClick()
     {
@@ -270,11 +274,11 @@ public class UISelect : View
             }
             else
             {
-                if(i == 6)  //如果是第6个地图
+                if(i == 6)  //如果是第7个地图
                 {
                     maps[i].gameObject.SetActive(true);
                 }
-                else     //不是第六个主题，将其中从第一个到第levelIndex-1个小地图点亮,并将后面的小地图设置为未点亮
+                else     //不是第7个主题，将其中从第一个到第levelIndex-1个小地图点亮,并将后面的小地图设置为未点亮
                 {
                     int j = 0;
                     foreach(Transform levelTransform in maps[i])

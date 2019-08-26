@@ -17,6 +17,7 @@ public class Game : ApplicationBase<Game>
     public Text myText;
     public bool IsPlayOnLevel = false;   //是否正在关卡中
     public bool IsPauseGame = false;     //是否暂停游戏
+    [HideInInspector]
     public bool isFirst = false;
 
     private SceneLoadProcess m_SceneLoadProcess;
@@ -58,6 +59,16 @@ public class Game : ApplicationBase<Game>
         a_ObjectPool = ObjectPool.Instance;
         a_Sound = Sound.Instance;
         a_StaticData = StaticData.Instance;
+
+        int isEnd = Saver.GetGuideIsEnd();
+        if(isEnd == 0)
+        {
+            isFirst = true;
+        }
+        else if (isEnd == 1)
+        {
+            isFirst = false;
+        }
 
         m_SceneLoadProcess = transform.Find("GameCanvas/UISceneLoadProcess").GetComponent<SceneLoadProcess>();
         HideSceneLoadProcess();

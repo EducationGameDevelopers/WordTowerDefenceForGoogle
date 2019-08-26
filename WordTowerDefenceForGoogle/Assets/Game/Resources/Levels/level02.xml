@@ -68,7 +68,7 @@
 		<WordId Id="0015" />
 	</WordIds>
   <TowerIds>
-    <Tower Id="5"/>
-    <Tower Id="6"/>
+    <Tower Id="0"/>
+    <Tower Id="1"/>
   </TowerIds>
 </Level>

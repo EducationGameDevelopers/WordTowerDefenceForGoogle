@@ -24,5 +24,22 @@ public static class Saver
     {
         PlayerPrefs.SetInt(Consts.S_GameProgress, levelIndex);
     }
+    /// <summary>
+    /// 设置新手教程是否结束
+    /// </summary>
+    /// <param name="isEnd">isEnd为1表示新手教程结束，为0表示未结束</param>
+
+    public static void SetGuideIsEnd(int isEnd)
+    {
+        PlayerPrefs.SetInt("isEnd", isEnd);
+    }
+    /// <summary>
+    /// 获取教程是否结束，如果未获取到，默认设为0，0表示未结束，需要进行新手教程
+    /// </summary>
+
+    public static int GetGuideIsEnd()
+    {
+        return PlayerPrefs.GetInt("isEnd", 0);
+    }
 }
 
