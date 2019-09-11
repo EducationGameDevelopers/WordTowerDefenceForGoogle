@@ -278,7 +278,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6b18538d361a2d54d8df44e536e8c4ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05aea8ce84dd44e4b84fbe11e49997f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6941,12 +6941,42 @@ Prefab:
     - target: {fileID: 224768392268124942, guid: 9db78367b620b0e448861a5037de004f,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 318.55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224768392268124942, guid: 9db78367b620b0e448861a5037de004f,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -211.1
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224127061754591704, guid: 9db78367b620b0e448861a5037de004f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 83
+      objectReference: {fileID: 0}
+    - target: {fileID: 224127061754591704, guid: 9db78367b620b0e448861a5037de004f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -233
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304550236671564, guid: 9db78367b620b0e448861a5037de004f,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 224768392268124942, guid: 9db78367b620b0e448861a5037de004f,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1101
+      objectReference: {fileID: 0}
+    - target: {fileID: 224768392268124942, guid: 9db78367b620b0e448861a5037de004f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 85.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224127061754591704, guid: 9db78367b620b0e448861a5037de004f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 146.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9db78367b620b0e448861a5037de004f, type: 2}

@@ -116,7 +116,7 @@ public class CircleShaderController : MonoBehaviour
         }
         currentIndex = 0;
         ev = transform.GetComponent<EventPenetrate>();
-        remindText = GameObject.Find("RemindText").GetComponent<Text>();
+        remindText = GameObject.Find("Bg/RemindText").GetComponent<Text>();
         if(Game.Instance.isFirst)
         {
             //获取编号
@@ -152,6 +152,7 @@ public class CircleShaderController : MonoBehaviour
                     Targets[1] = GameObject.Find("UIBoard/Score/ScoreImageForGuideSys").GetComponent<Image>();
                     Targets[2] = GameObject.Find("UIBoard/BtnPause").GetComponent<Image>();
                     this.remindText.text = "";
+                    this.transform.Find("Bg").gameObject.SetActive(false);
                     gameObject.GetComponent<Image>().color = new Color(0, 0, 0, 0);
                     break;
             }
@@ -194,6 +195,7 @@ public class CircleShaderController : MonoBehaviour
     /// </summary>
     public void CountDownCompleted()
     {
+        this.transform.Find("Bg").gameObject.SetActive(true);
         this.gameObject.GetComponent<Image>().color = new Color(0, 0, 0, 0.36f);
         this.remindString = RemindString.hpRemind;
         ChangeTarget();

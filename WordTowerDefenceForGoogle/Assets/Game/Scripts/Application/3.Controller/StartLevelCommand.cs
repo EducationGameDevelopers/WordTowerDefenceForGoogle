@@ -15,7 +15,6 @@ public class StartLevelCommand : Controller
         //第一步
         GameModel gModel = GetModel<GameModel>();
         gModel.StartLevel(e.LevelIndex);
-        Debug.Log("关卡索引：" + e.LevelIndex);
         gModel.Gold = 1000;
         
         //第二步
